@@ -176,7 +176,11 @@ If service is not accessible, use:
 kubectl port-forward svc/nginx-service 8080:80 -n demo-namespace
 ```
 
+---
+
 Now access your NGINX site via: [http://localhost:8080](http://localhost:8080)
+
+---
 
 ---
 
