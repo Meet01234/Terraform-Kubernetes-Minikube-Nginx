@@ -180,14 +180,6 @@ Now access your NGINX site via: [http://localhost:8080](http://localhost:8080)
 
 ---
 
-## 👨‍💻 Author
-
-**Meet01234** – Terraform, Kubernetes, Minikube Automation
-
----
-
----
-
 ![Output Screenshot](Ku.png)
 
 ---
