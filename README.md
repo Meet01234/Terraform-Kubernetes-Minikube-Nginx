@@ -159,10 +159,6 @@ minikube status
 ```
 
 ```bash
-minikube start --driver=docker
-```
-
-```bash
 kubectl get pods -n demo-namespace
 ```
 
