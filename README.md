@@ -25,6 +25,10 @@ This project sets up a basic Kubernetes deployment using Terraform with Minikube
 
 ## 📄 main.tf
 
+```bash
+notepad main.tf
+```
+
 ```hcl
 terraform {
   required_providers {
@@ -56,6 +60,10 @@ resource "kubernetes_manifest" "nginx_service" {
 
 ## 📄 namespace.yaml
 
+```bash
+notepad namespace.yaml
+```
+
 ```yaml
 apiVersion: v1
 kind: Namespace
@@ -66,6 +74,10 @@ metadata:
 ---
 
 ## 📄 deployment.yaml
+
+```bash
+notepad deployment.yaml
+```
 
 ```yaml
 apiVersion: apps/v1
@@ -94,6 +106,10 @@ spec:
 
 ## 📄 service.yaml
 
+```bash
+notepad service.yaml
+```
+
 ```yaml
 apiVersion: v1
 kind: Service
@@ -113,6 +129,10 @@ spec:
 ---
 
 ## 📄 outputs.tf
+
+```bash
+notepad outputs.tf
+```
 
 ```hcl
 output "nginx_url" {
