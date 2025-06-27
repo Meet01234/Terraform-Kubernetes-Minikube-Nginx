@@ -144,11 +144,36 @@ output "nginx_url" {
 
 ## ⚙️ Minikube Installation
 
-```bash
+- Go To Open Windows PowerShell > Run As Administration
+- Click Your PC Window Button And Search Windows PowerShell
+
+```powershell
 choco install minikube -y
 ```
 
+## ⚙️ If You Are Showing Error In Install Minikube
+- Find This Folder
+
 ```bash
+C:\ProgramData
+```
+- Delete chocolatey Folder
+
+
+- Enter This Command In Windows PowerShell
+
+```bash
+Set-ExecutionPolicy Bypass -Scope Process -Force; `
+[System.Net.ServicePointManager]::SecurityProtocol = [System.Net.ServicePointManager]::SecurityProtocol -bor 3072; `
+iex ((New-Object System.Net.WebClient).DownloadString('https://community.chocolatey.org/install.ps1'))
+```
+- Re-Enter This Command
+  
+```powershell
+choco install minikube -y
+```
+
+```powershell
 minikube start --driver=docker
 ```
 
